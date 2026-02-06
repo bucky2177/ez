@@ -90,12 +90,12 @@ function(
 	counts$xmax = counts$x+.5
 	p = ggplot(
 		data = counts
-		,aes_string(
-			ymin = 'ymin'
-			, ymax = 'ymax'
-			, xmin = 'xmin'
-			, xmax = 'xmax'
-			, fill = 'Count'
+		,aes(
+			ymin = .data$ymin
+			, ymax = .data$ymax
+			, xmin = .data$xmin
+			, xmax = .data$xmax
+			, fill = .data$Count
 		)
 	)+
 	geom_rect()+
@@ -122,7 +122,7 @@ function(
 	}
 	if(cell_border_size>0){
 		p = p + geom_rect(
-			size = cell_border_size
+		  linewidth = cell_border_size
 			, colour = 'grey90'
 			, show.legend = FALSE
 		)

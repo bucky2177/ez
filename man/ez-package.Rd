@@ -15,7 +15,7 @@ License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
 This package contains several useful functions:
-\itemize{
+\describe{
 \item{\code{\link{ezANOVA}}}{ Provides simple interface to ANOVA, including assumption checks.}
 \item{\code{\link{ezBoot}}}{ Computes bootstrap resampled cell means or lmer predictions}
 \item{\code{\link{ezCor}}}{ Function to plot a correlation matrix with scatterplots, linear fits, and univariate density plots}

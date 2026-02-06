@@ -114,9 +114,9 @@ function(
 		, stat = "identity"
 		, position = "identity"
 		, data = z
-		, mapping = aes_string(
-			x = 'x'
-			, y = 'y'
+		, mapping = aes(
+			x = .data$x
+			, y = .data$y
 		)
 	)
 	lm_line_layer = layer(
@@ -129,9 +129,9 @@ function(
 			, na.rm = TRUE
 		)
 		, data = z
-		, mapping = aes_string(
-			x = 'x'
-			, y = 'y'
+		, mapping = aes(
+		  x = .data$x
+		  , y = .data$y
 		)
 	)
 	lm_ribbon_layer = layer(
@@ -145,9 +145,9 @@ function(
 			, na.rm = TRUE
 		)
 		, data = z
-		, mapping = aes_string(
-			x = 'x'
-			, y = 'y'
+		, mapping = aes(
+		  x = .data$x
+		  , y = .data$y
 		)
 	)
 	cor_text_layer = layer(
@@ -155,10 +155,10 @@ function(
 		, stat = "identity"
 		, position = "identity"
 		, data = z_cor
-		, mapping = aes_string(
-			label = 'cor'
-			, size = 'rsq'
-			, colour = 'p'
+		, mapping = aes(
+			label = .data$cor
+			, size = .data$rsq
+			, colour = .data$p
 		)
 		, params = list(
 		  x = 0
@@ -176,10 +176,10 @@ function(
 			, na.rm = TRUE
 		)
 		, data = dens
-		, mapping = aes_string(
-			x = 'x'
-			, ymax = 'ymax'
-			, ymin = 'ymin'
+		, mapping = aes(
+			x = .data$x
+			, ymax = .data$ymax
+			, ymin = .data$ymin
 		)
 	)
 	label_layer = layer(
@@ -193,10 +193,10 @@ function(
 			, na.rm = TRUE
 		)
 		, data = labels
-		, mapping = aes_string(
-			x='x'
-			, y='y'
-			, label='label'
+		, mapping = aes(
+			x=.data$x
+			, y=.data$y
+			, label=.data$label
 		)
 	)
 	y_lab = NULL

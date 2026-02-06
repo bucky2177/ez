@@ -252,20 +252,20 @@ function(
 		if(!is.null(row)){
 			if(!is.null(col)){
 				if(y_free){
-					p = paste(p,"+\nfacet_grid(\n\tfacets = ",row," ~ ",col,"\n\t, scales = 'free_y'\n)",sep='')
+					p = paste(p,"+\nfacet_grid(\n\t",row," ~ ",col,"\n\t, scales = 'free_y'\n)",sep='')
 				}else{
-					p = paste(p,"+\nfacet_grid(\n\tfacets = ",row," ~ ",col,"\n)",sep='')
+					p = paste(p,"+\nfacet_grid(\n\t",row," ~ ",col,"\n)",sep='')
 				}
 			}else{
 				if(y_free){
-					p = paste(p,"+\nfacet_grid(\n\tfacets = ",row," ~ .\n\t, scales = 'free_y'\n)",sep='')
+					p = paste(p,"+\nfacet_grid(\n\t",row," ~ .\n\t, scales = 'free_y'\n)",sep='')
 				}else{
-					p = paste(p,"+\nfacet_grid(\n\tfacets = ",row," ~ .\n)",sep='')
+					p = paste(p,"+\nfacet_grid(\n\t",row," ~ .\n)",sep='')
 				}
 			}
 		}else{
 			if(!is.null(col)){
-				p = paste(p,"+\nfacet_grid(\n\tfacets = . ~ ",col,"\n\t, scales = 'free_y'\n)",sep='')
+				p = paste(p,"+\nfacet_grid(\n\t. ~ ",col,"\n\t, scales = 'free_y'\n)",sep='')
 			}
 		}
 		if(str_detect(p,"alpha = CI")){

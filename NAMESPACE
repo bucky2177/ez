@@ -9,12 +9,15 @@ importFrom("stats", "predict", "AIC", "anova", "aov", "coef", "contrasts",
 
 importFrom("utils", "flush.console", "installed.packages")
 
+importFrom("rlang", ".data")
+
+
 
 importFrom(mgcv,gam,bam)
 
 importFrom(car,Anova)
 
-importFrom(ggplot2, aes_string, element_blank, element_rect, facet_grid,
+importFrom(ggplot2, element_blank, element_rect, facet_grid,
            geom_rect, ggplot, labs, layer, scale_fill_gradient, scale_size,
            scale_x_continuous, scale_y_continuous, theme, scale_colour_manual,
            aes, geom_point, geom_errorbar, geom_line)
