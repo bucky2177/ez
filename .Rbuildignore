@@ -3,3 +3,5 @@
 .DS_Store
 .Rapp.history
 ^cran-comments\.md$
+^.*\.Rproj$
+^\.Rproj\.user$

@@ -1,17 +1,10 @@
-# ez
+# ez - Revival fork
 
 The aim of the `ez` package for R is to provide a simplified/unified interface to common analysis techniques, including analysis of variance and mixed effects modeling. 
 
-This site not only hosts the ongoing code development for `ez`, but also serves as the forum (https://github.com/mike-lawrence/ez/issues) to report bugs and request features associated `ez`.
+This revival site has been forked from the original `ez` repository (https://github.com/mike-lawrence/ez), with the intend of bringing `ez` back on CRAN. 
 
-A discussion forum can be found at http://groups.google.com/group/ez4r
+The original author Mike Lawrence (https://github.com/mike-lawrence) is not responding to mails, pull requests, or issues, and the last updates on `ez` are 10 years ago. Thus, I decided to step in as a maintainer, knowing that `ez` has been a valuable software for science. In case Mike will start again developing `ez`, this fork will be deleted or properly merged.
 
-## Note:
 
-To automatically download and install the very latest ez code any time you run a given R script, install the `devtools` library (`install.packages('devtools')`; windows users will also have to install Rtools, http://cran.r-project.org/bin/windows/Rtools/, and install devtools via `install.packages('devtools',type='source')`) then put the following at the top of your script:
-
-    library(devtools)
-    dev_mode()
-    install_github('mike-lawrence/ez')
-    library(ez)
 
