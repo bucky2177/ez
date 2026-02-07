@@ -215,7 +215,7 @@ function (
 	if(!is.null(split)){
 		p = paste(p,"+\ngeom_point(\n\tmapping = aes(\n\t\tcolour = ",split,"\n\t\t, shape = ",split,"\n\t)\n\t, alpha = .8\n)",sep='')
 		if(do_lines){
-			p = paste(p,"+\ngeom_line(\n\tmapping = aes(\n\t\tcolour = ",split,"\n\t\t, linetype = ",split,"\n\t\t, x = I(as.numeric(",x,"))\n\t)\n\t, alpha = .8\n)",sep='')
+			p = paste(p,"+\ngeom_line(\n\tmapping = aes(\n\t\tcolour = ",split, "\n\t\t, group = ",split, "\n\t\t, linetype = ",split,"\n\t\t, x = ",x,"\n\t)\n\t, alpha = .8\n)",sep='')
 		}
 		if(do_bars){
 			p = paste(p,"+\ngeom_errorbar(\n\tmapping = aes(\n\t\tcolour = ",split,"\n\t\t, ymin = lo\n\t\t, ymax = hi\n\t)\n\t, linetype = 1\n\t, show.legend = FALSE\n\t, width = ",bar_width,"\n\t, alpha = .5\n)",sep='')
@@ -223,7 +223,7 @@ function (
 	}else{
 		p = paste(p,"+\ngeom_point()",sep='')
 		if(do_lines){
-			p = paste(p,"+\ngeom_line(\n\tmapping = aes(\n\t\tx = I(as.numeric(",x,"))\n\t)\n)",sep='')
+			p = paste(p,"+\ngeom_line(\n\tmapping = aes(\n\t\tx = ",x, "\n\t\t, group = 1", "\n\t)\n)",sep='')
 		}
 		if(do_bars){
 			p = paste(p,"+\ngeom_errorbar(\n\tmapping = aes(\n\t\tymin = lo\n\t\t, ymax = hi\n\t)\n\t, linetype = 1\n\t, show.legend = FALSE\n\t, width = ",bar_width,"\n\t, alpha = .5\n)",sep='')

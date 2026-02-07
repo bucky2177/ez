@@ -243,9 +243,11 @@ function(
 			p = paste(p,"\n)",sep='')
 		}
 		if(do_lines){
-			p = paste(p,"+\ngeom_line(\n\tdata = cells\n\t, mapping = aes(\n\t\tx = I(as.numeric(",x,"))\n\t\t, y = value",sep='')
+			p = paste(p,"+\ngeom_line(\n\tdata = cells\n\t, mapping = aes(\n\t\tx = ",x, "\n\t\t, y = value",sep='')
 			if(!is.null(split)){
-				p = paste(p,"\n\t\t, colour = ",split,"\n\t\t, linetype = ",split,sep='')
+				p = paste(p,"\n\t\t, colour = ",split, "\n\t\t, group = ", split, "\n\t\t, linetype = ",split,sep='')
+			}else{
+			  p = paste(p,"\n\t\t, group = ", 1, "\n\t\t, linetype = ",split,sep='')
 			}
 			p = paste(p,"\n\t)\n\t, alpha = ",line_alpha,"\n)",sep='')
 		}
