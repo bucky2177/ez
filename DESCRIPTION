@@ -1,10 +1,9 @@
 Package: ez
-Version: 4.4-0
-Date: 2016-11-01
+Version: 4.5-0
+Date: 2026-02-07
 Title: Easy Analysis and Visualization of Factorial Experiments
 Authors@R: 
-    person("Michael A.", "Lawrence", email = "mike.lwrnc@gmail.com", role = c("aut", "cph"))
-    person("Valentin", "Koob", email = "v.koob@web.de", role = c("cre"))
+    person("Michael A.", "Lawrence", email = "mike.lwrnc@gmail.com", role = c("aut", "cph", "cre"))
 URL: http://github.com/mike-lawrence/ez
 Depends:
     R (>= 3.1)

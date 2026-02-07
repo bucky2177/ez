@@ -5,6 +5,7 @@ fixes to bring ez back on CRAN:
   - Replace call to itemize by describe, as the former won't accept the \item{label}{description} style for entries. This results in a note with a new CRAN check
 - removing the `facet` argument of `facet_grid()` which was deprecated in ggplot 2.2.0 (https://github.com/mike-lawrence/ez/issues/73)
 - changing `aes_string()` to `aes()`, as the former was was deprecated in ggplot2 3.0.0
+- changing `size` argument in `geom_rect()` to `linewidth`, avoiding a deprecation warning
 
 4.4
 - eliminated warning about "show.guide" with plots
