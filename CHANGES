@@ -6,6 +6,7 @@ fixes to bring ez back on CRAN:
 - removing the `facet` argument of `facet_grid()` which was deprecated in ggplot 2.2.0 (https://github.com/mike-lawrence/ez/issues/73)
 - changing `aes_string()` to `aes()`, as the former was was deprecated in ggplot2 3.0.0
 - changing `size` argument in `geom_rect()` to `linewidth`, avoiding a deprecation warning
+None of these changes should affect user interaction
 
 4.4
 - eliminated warning about "show.guide" with plots

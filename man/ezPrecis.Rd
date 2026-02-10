@@ -41,7 +41,7 @@ This row reports the maximum value found in each column. If the column data is n
 }
 \author{
 Michael A. Lawrence \email{mike.lwrnc@gmail.com}\cr
-Visit the \code{ez} development site at \url{http://github.com/mike-lawrence/ez}\cr
+Visit the \code{ez} development site at \url{https://github.com/mike-lawrence/ez}\cr
 for the bug/issue tracker and the link to the mailing list.
 }
 \seealso{
