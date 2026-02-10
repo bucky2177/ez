@@ -8,8 +8,6 @@ status](https://www.r-pkg.org/badges/version/ez)](https://CRAN.R-project.org/pac
 [![R-CMD-check](https://github.com/bucky2177/ez/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/bucky2177/ez/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-# ez
-
 The aim of the `ez` package for R is to provide a simplified/unified
 interface to common analysis techniques, including analysis of variance
 and mixed effects modeling.
