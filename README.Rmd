@@ -31,13 +31,13 @@ The original author is fully credited for the development of `ez`. Maintenance o
 
 You can install the latest version of `ez` from GitHub with:
 
-```{r}
+```{r, eval=FALSE} 
 install.packages("devtools")
 devtools::install_github("bucky2177/ez")
 ```
 
 The CRAN version can be installed with:
 
-```{r} 
-install.packages("dRiftDM")
+```{r, eval=FALSE} 
+install.packages("ez")
 ```

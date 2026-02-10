@@ -30,38 +30,11 @@ You can install the latest version of `ez` from GitHub with:
 
 ``` r
 install.packages("devtools")
-#> Installiere Paket nach 'C:/Users/cognium-admin/AppData/Local/Temp/RtmpIvMSdP/temp_libpath204047ff6f2f'
-#> (da 'lib' nicht spezifiziert)
-#> Paket 'devtools' erfolgreich ausgepackt und MD5 Summen abgeglichen
-#> 
-#> Die heruntergeladenen Binärpakete sind in 
-#>  C:\Users\cognium-admin\AppData\Local\Temp\RtmpiQtAB4\downloaded_packages
 devtools::install_github("bucky2177/ez")
-#> Using GitHub PAT from the git credential store.
-#> Downloading GitHub repo bucky2177/ez@HEAD
-#> 
-#> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>       ✔  checking for file 'C:\Users\cognium-admin\AppData\Local\Temp\RtmpiQtAB4\remotes262061e75f47\bucky2177-ez-1359b2e/DESCRIPTION'
-#>       ─  preparing 'ez': (412ms)
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
-#>       ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#> ─  looking to see if a 'data/datalist' file should be added
-#>       ─  building 'ez_4.5-0.tar.gz'
-#>      
-#> 
-#> Installiere Paket nach 'C:/Users/cognium-admin/AppData/Local/Temp/RtmpIvMSdP/temp_libpath204047ff6f2f'
-#> (da 'lib' nicht spezifiziert)
 ```
 
 The CRAN version can be installed with:
 
 ``` r
-install.packages("dRiftDM")
-#> Installiere Paket nach 'C:/Users/cognium-admin/AppData/Local/Temp/RtmpIvMSdP/temp_libpath204047ff6f2f'
-#> (da 'lib' nicht spezifiziert)
-#> Paket 'dRiftDM' erfolgreich ausgepackt und MD5 Summen abgeglichen
-#> 
-#> Die heruntergeladenen Binärpakete sind in 
-#>  C:\Users\cognium-admin\AppData\Local\Temp\RtmpiQtAB4\downloaded_packages
+install.packages("ez")
 ```
